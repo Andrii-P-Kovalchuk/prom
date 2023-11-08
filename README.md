@@ -14,4 +14,4 @@ This is README file.
  -  ``git commit -m "File README.md changed"``
 6. Merge changes from the "development" branch into the "main" branch. Before merging change to branch "main".
  - ``git checkout main``
- -  ``git marge development``
+ - ``git marge development``
