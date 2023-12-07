@@ -1,0 +1,16 @@
+✨ Attempting to apply the following manifest:
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-multicontainer
+spec:
+  containers:
+  - name: nginx
+    image: nginx:latest
+    ports:
+    - containerPort: 80
+      protocol: TCP
+  - name: sidecar
+    image: busybox:latest
+    command: ["/bin/sh", "-c"]
+    args: ["while true; do echo 'Hello from sidecar'; sleep 5; done"]
