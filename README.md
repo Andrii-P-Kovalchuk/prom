@@ -1,17 +1,12 @@
-This is README file.
 
-## Step-by-step instruction.
-1. Create new directory "new-project":
- - ``mkdir new-project`` 
-2. Change current directory to "new-project":
- - ``cd  new-project``
-3. Initialize a new public Git repository inside the "new-project" directory:
- - ``git init``
-4. Create a new branch called "development" and switch to it. 
- - ``git checkout -b  "development"``
-5.  Commit changes to the "development" branch with a commit message.
- -  ``git add README.md``
- -  ``git commit -m "File README.md changed"``
-6. Merge changes from the "development" branch into the "main" branch. Before merging change to branch "main".
- - ``git checkout main``
- - ``git marge development``
+| NAME| PROMPT | DESCRIPTION | EXAMPLE |
+|-|-|-|-|
+| app.yaml| create nginx deployment | YAML to define the basic schema of nginx              | [app.yaml](yaml/app.yaml)                 |
+| app-livenessProbe.yaml      | create nginx livenessProbe | YAML to define a liveness probe for nginx                    | [app-livenessProbe.yaml](yaml/app-livenessProbe.yaml) |
+| app-readinessProbe.yaml     | create nginx readinessProbe | YAML to define a readiness probe for nginx                   | [app-readinessProbe.yaml](yaml/app-readinessProbe.yaml) |
+| app-volumeMounts.yaml       | create nginx volumeMounts | YAML to define and configure storage volumes nginx       | [app-volumeMounts.yaml](yaml/app-volumeMounts.yaml) |
+| app-cronjob.yaml            | create nginx cronjob| YAML to define a cron job for nginx                       | [app-cronjob.yaml](yaml/app-cronjob.yaml) |
+| app-job.yaml                |create nginx job | YAML to define a job for nginx                            | [app-job.yaml](yaml/app-job.yaml) |
+| app-multicontainer.yaml     | create nginx multicontainer | YAML to define a pod that runs more than one container                  | [app-multicontainer.yaml](yaml/app-multicontainer.yaml) |
+| app-resources.yaml          | create nginx resources | YAML to configure resource requests and limits for nginx     | [app-resources.yaml](yaml/app-resources.yaml) |
+| app-secret-env.yaml         | create nginx secret-env    | YAML to define environment variables using secrets                      | [app-secret-env.yaml](yaml/app-secret-env.yaml) |
